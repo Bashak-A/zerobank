@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-31T07:18:33.502Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10015657800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Login as authorized user",
+        "description": "",
+        "id": "login;login-as-authorized-user",
+        "after": [
+          {
+            "result": {
+              "duration": 643849700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5287800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 766900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user logs in with valid credentials",
+            "match": {
+              "location": "LoginStepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 681000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "account summary page should be displayed",
+            "match": {
+              "location": "LoginStepDefinitions.account_summary_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@valid_credential"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  Only authorized users should be able to login to the application.",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
